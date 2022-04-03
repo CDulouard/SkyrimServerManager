@@ -18,8 +18,8 @@ jobs:
     steps:
       - name: Install aws CLI
         run: |
-          apt-get update -y
-          apt-get install unzip -y 
+          sudo apt-get update -y
+          sudo apt-get install unzip -y 
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
           unzip awscliv2.zip
           ./aws/install
