@@ -1,5 +1,5 @@
 ---
-name: '🚀✨ Start server...'
+name: '🧨💥 Stop server...'
 on:
   workflow_dispatch:
 
@@ -16,6 +16,6 @@ jobs:
   start:
     runs-on: ubuntu-latest
     steps:
-      - name: Start instance
+      - name: Stop instance
         run: |
-          aws ec2 start-instances --instance-ids ${{ env.INSTANCE_ID }}
+          aws ec2 stop-instances --instance-ids ${{ env.INSTANCE_ID }}
