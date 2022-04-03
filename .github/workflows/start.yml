@@ -18,4 +18,4 @@ jobs:
     steps:
       - name: Start instance
         run: |
-          aws start-instances --instance-ids ${{ env.INSATANCE_ID }}
+          aws ec2 start-instances --instance-ids ${{ env.INSATANCE_ID }}
